@@ -1,0 +1,87 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin: 0;
+  padding: 5px;
+}
+.Main {
+  border: 1px;
+  border-style: solid;
+  border-radius: 3px;
+  border-color: blueviolet;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.AddSpace {
+  display: flex;
+  width: 70%;
+  border: 1px;
+  border-style: solid;
+  border-radius: 3px;
+  border-color:violet;
+  margin: 5px;
+  padding: 5px;
+}
+.ToDoListSpace {
+  display: flex;
+  border: 1px;
+  border-style: solid;
+  border-radius: 3px;
+  border-color:burlywood;
+  margin: 5px;
+  padding: 5px;
+}
+.AddText {
+  width: 70%;
+  border: 1px;
+  border-style: solid;
+  border-radius: 3px;
+  border-color:hsl(0, 76%, 72%)8, 130, 130);
+  margin: 5px;
+  padding: 5px;
+}
+.AddButton {
+  border: 1px;
+  border-style: solid;
+  border-radius: 3px;
+  border-color:hsl(0, 67%, 49%);
+  margin: 5px;
+  padding: 5px;
+}
+.Task {
+  border: 1px;
+  border-style: solid;
+  border-radius: 3px;
+  border-color:hsl(107, 76%, 72%);
+  margin: 5px;
+  padding: 5px;
+}
+.TaskButtons {
+  border: 1px;
+  border-style: solid;
+  border-radius: 3px;
+  border-color:hsl(130, 100%, 50%);
+  margin: 5px;
+  padding: 5px;
+}
+button{
+  width: 3em;
+  height: 2em;
+  margin: 2px;
+}
+.AddButton{
+  background-color: hsl(96, 100%, 50%);
+}
