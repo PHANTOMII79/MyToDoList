@@ -1,87 +1,86 @@
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  border: 4px;
+  justify-content: center;
+  align-items: start;
+  background-color: hsla(180, 7%, 6%, 0.55);
+}
+button{
+  border-radius: 0.5em;
+  padding: 3px 5px;
+  
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  margin: 0;
-  padding: 5px;
+}
+button:hover{
+  box-shadow: rgba(0, 0, 0, 0.295) 3px 3px;
+}
+input{
+  height: 20px;
+  border-radius: 1em ;
+  padding-left: 1em;
 }
 .Main {
-  border: 1px;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(36, 46, 46, 0.61);
   border-style: solid;
-  border-radius: 3px;
-  border-color: blueviolet;
+  border-radius: 2em;
+  border-color: rgba(26, 32, 32, 0.61) ;
   padding: 5px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
 }
 .AddSpace {
   display: flex;
-  width: 70%;
-  border: 1px;
-  border-style: solid;
   border-radius: 3px;
-  border-color:violet;
   margin: 5px;
   padding: 5px;
 }
+
+.AddTaskText{
+  color: black;
+  background-color: hsl(0, 66%, 94%);
+  border-color: hsl(0, 66%, 100%);
+}
+
+.AddTaskButton{
+  background-color: chartreuse;
+}
+
 .ToDoListSpace {
   display: flex;
+  flex-direction: column;
   border: 1px;
-  border-style: solid;
-  border-radius: 3px;
-  border-color:burlywood;
   margin: 5px;
   padding: 5px;
 }
-.AddText {
-  width: 70%;
-  border: 1px;
-  border-style: solid;
-  border-radius: 3px;
-  border-color:hsl(0, 76%, 72%)8, 130, 130);
+
+.ToDoTask{
+  display: flex;
   margin: 5px;
-  padding: 5px;
 }
-.AddButton {
-  border: 1px;
-  border-style: solid;
-  border-radius: 3px;
-  border-color:hsl(0, 67%, 49%);
-  margin: 5px;
-  padding: 5px;
+
+.TaskText{
+  margin: 4px;
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.555) 2px 2px;
+  color: white !important;
+  background-color: hsla(184, 48%, 60%, 0.632);
 }
-.Task {
-  border: 1px;
-  border-style: solid;
-  border-radius: 3px;
-  border-color:hsl(107, 76%, 72%);
-  margin: 5px;
-  padding: 5px;
+
+.UpButton{
+  background-color: cyan;
 }
-.TaskButtons {
-  border: 1px;
-  border-style: solid;
-  border-radius: 3px;
-  border-color:hsl(130, 100%, 50%);
-  margin: 5px;
-  padding: 5px;
+
+.DownButton{
+  background-color: cyan;
 }
-button{
-  width: 3em;
-  height: 2em;
-  margin: 2px;
-}
-.AddButton{
-  background-color: hsl(96, 100%, 50%);
+
+.DeleteButton{
+ background-color: crimson;
 }

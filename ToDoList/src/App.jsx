@@ -111,11 +111,13 @@ function ToDoTask({index, task, deleteTask, MoveUp, MoveDown}){
 
   return(
     <>
-      <input type="text" className='TaskText'  value={task} readOnly/>
-      <button className="UpButton" onClick={() => MoveUp(index) }>👆</button>
-      <button className="DownButton" onClick={() =>MoveDown(index) }>👇</button>
-      <button className="DeleteButton" onClick={() =>deleteTask(index) }>🗑️</button>
-    
+      <div className="ToDoTask">
+        <input type="text" className='TaskText'  value={task} readOnly/>
+        <button className="UpButton" onClick={() => MoveUp(index) }>👆</button>
+        <button className="DownButton" onClick={() =>MoveDown(index) }>👇</button>
+        <button className="DeleteButton" onClick={() =>deleteTask(index) }>🗑️</button>
+      
+      </div>
     </>
 
   );
@@ -127,7 +129,10 @@ export default function App(){
 
   return(
     <>
+    <div className="App">
       <Main />
+    </div>
+      
     
     </>
   );
